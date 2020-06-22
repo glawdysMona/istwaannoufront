@@ -1,0 +1,19 @@
+.barre-de-recherche{
+  /*  width: 350px;
+    padding:30px;  */
+    height:70px;
+    position:absolute;
+    right:20px;
+    top:10px;
+  }
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+
+}
+
+.bouton-aligne{
+    display: inline-block;
+  /*  margin-left: 50px; */
+  }

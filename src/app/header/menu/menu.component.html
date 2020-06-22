@@ -1,0 +1,37 @@
+<!-- <p>menu works!</p> -->
+
+<nav class="formeMenu">
+    <button mat-raised-button ><a routerLink="/">Accueil</a></button>
+    <!--<mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu> -->
+    
+    <button mat-raised-button [matMenuTriggerFor]="menuHistoire"><a routerLink="/histoiredesantilles">Histoire des antilles</a></button>
+    <mat-menu #menuHistoire>
+      <button mat-menu-item>Guadeloupe</button>
+      <button mat-menu-item>Martinique</button>
+      <button mat-menu-item>Guyane</button>
+      <button mat-menu-item>Haïti</button>
+    </mat-menu>
+    
+    <button mat-raised-button [matMenuTriggerFor]="menuDictionnaire"><a routerLink="/dictionnaire">Dictionnaire</a></button>
+    <mat-menu #menuDictionnaire="matMenu">
+      <button mat-menu-item>Guadeloupe</button>
+      <button mat-menu-item>Martinique</button>
+      <button mat-menu-item>Guyane</button>
+      <button mat-menu-item>Haïti</button>
+    </mat-menu>
+    
+    <button mat-raised-button [matMenuTriggerFor]="menuJeux"><a routerLink="/jeux">Jeux</a></button>
+    <mat-menu #menuJeux>
+      <button mat-menu-item routerLink="/jeux/quizz">Quizz</button>
+      <button mat-menu-item routerLink="/jeux/memory">Memory</button>
+    
+    </mat-menu>
+    
+    <button mat-raised-button >
+      <a routerLink="/contact">Contact</a>
+    </button>
+    
+    </nav>
